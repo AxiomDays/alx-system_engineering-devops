@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#script that prints stuff
+
+while [[ i -lt 10 ]]
+do
+	if (( i == 8 )); then
+	echo "Hi"
+	i=$((i+1))
+	continue
+	fi
+	echo "Best School"
+	i=$((i+1))
+done
