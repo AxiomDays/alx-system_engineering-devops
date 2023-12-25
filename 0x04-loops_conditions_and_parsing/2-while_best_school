@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#this prints some lines
+
+
+while [[ i -lt 10 ]];
+do
+	echo "Best School"
+	i=$((i+1))
+done
