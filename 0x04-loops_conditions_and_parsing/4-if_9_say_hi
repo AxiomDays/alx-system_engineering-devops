@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 #script that prints stuff
 
-while [[ i -lt 10 ]]
+while [[ i -lt 11 ]]
 do
-	if (( i == 8 )); then
+	if (( i == 9 )); then
 	echo "Hi"
 	i=$((i+1))
 	continue
