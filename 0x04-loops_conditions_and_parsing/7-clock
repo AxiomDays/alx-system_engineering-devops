@@ -2,7 +2,7 @@
 #script that prints a bit
 
 j=0
-while [[ j -lt 12 ]]
+while [[ j -lt 13 ]]
 do
 echo "Hour: $j"
 i=1
