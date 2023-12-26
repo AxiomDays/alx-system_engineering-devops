@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+#script that prints
+
+i=1
+while [[ i -lt 21 ]]
+do
+        if (( i == 4 )); then
+        ech="bad luck from China"
+        elif (( i == 9 )); then
+        ech="bad luck from Japan"
+        elif (( i == 17 )); then
+        ech="bad luck from Italy"
+	else
+	ech=nub
+        fi
+
+	echo $i	
+	case $ech in
+		"bad luck from China")
+			echo "$ech";;
+		"bad luck from Japan")
+			echo "$ech";;
+		"bad luck from Italy")
+			echo "$ech";;
+		nub)
+			;;
+	esac
+        i=$((i+1))
+done
