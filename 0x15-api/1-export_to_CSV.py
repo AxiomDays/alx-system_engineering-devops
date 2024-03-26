@@ -19,6 +19,6 @@ if __name__ == "__main__":
     for tasks in y:
         buff = [tasks.get("userId"), f'{x.get("username")}', f'{tasks.get("completed")}', f"{tasks.get('title')}"]
         rows.append(buff)
-    with open("USER_ID.csv", "w") as data_file:
+    with open("{}.csv".format(tasks.get("userId")), "w") as data_file:
         csv_writer = csv.writer(data_file,  quoting=csv.QUOTE_ALL)
         csv_writer.writerows(rows)
