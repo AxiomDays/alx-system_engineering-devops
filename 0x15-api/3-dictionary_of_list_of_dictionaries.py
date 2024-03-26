@@ -20,7 +20,7 @@ if __name__ == "__main__":
             json.dump({
                 uid:
                 [{
-                    "username": x.get("username")
+                    "username": x.get("username"),
                     "task": tasks.get("title"),
                     "completed": tasks.get("completed"),
                     } for tasks in y]
