@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 """
 Write a Python script that, using this REST API,
 for a given employee ID, returns information about his/her TODO list progress.
@@ -17,7 +16,8 @@ if __name__ == "__main__":
 
     rows = []
     for tasks in y:
-        buff = [tasks.get("userId"), f'{x.get("username")}', f'{tasks.get("completed")}', f"{tasks.get('title')}"]
+        buff = [tasks.get("userId"), f'{x.get("username")}', 
+                f'{tasks.get("completed")}', f"{tasks.get('title')}"]
         rows.append(buff)
     with open("{}.csv".format(tasks.get("userId")), "w") as data_file:
         csv_writer = csv.writer(data_file,  quoting=csv.QUOTE_ALL)
