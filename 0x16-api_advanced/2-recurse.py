@@ -2,10 +2,10 @@
 """
 2-recurse
 """
-import request
+import requests
 
 
-def recurse(subreddit, hot_list=[]):
+def recurse(subreddit, hot_list=[], after=""):
     """
         returns a list containing the hot titles of a subreddit
     """
