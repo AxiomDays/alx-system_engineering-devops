@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # opnes a sever with ssh
 
-ssh -i ~/.ssh/school 'ubuntu'@'52.91.134.25'
+ssh -i ~/.ssh/school 'ubuntu'@'35.153.18.231'
